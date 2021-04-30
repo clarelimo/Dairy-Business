@@ -11,6 +11,19 @@
     <script src="overTimeReports.js"></script>
 </head>
 <body>
-    
+    <div class="daily">
+        <h1>Daily milk produced</h1>
+        <form class="daily-form">
+            <div class="form-group1">
+                <label>Shade</label>
+                <input type="text" name="shadename" id="shadename" class="form-control" placeholder="Enter the shade name">
+            </div>
+            <div class="form-group1">
+                <label>Litres</label>
+                <input type="number" name="litres" id="litres" class="form-control" placeholder="Enter the number of litres">
+            </div>
+        </form>
+        <button onclick="dailyReports()" class="submit">Submit</button>
+    </div>
 </body>
 </html>
