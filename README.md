@@ -15,6 +15,6 @@ HTML CSS Javascript
 ## Support and contact details
 Email : clare.limo@student.moringaschool.com
 ### License
-*[MIT License]("./LICENSE")
+[MIT License](./LICENSE)
 
 Copyright (c) [2021] [Clare Limo]
