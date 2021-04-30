@@ -10,3 +10,24 @@ body{
     min-height: 100vh;
     margin: 0;
 }
+
+.daily{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+}
+.daily-form{
+    padding: 30px 40px;
+}
+.daily h1{
+    margin: 0;
+    padding: 20px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
