@@ -11,7 +11,9 @@ This site captures daily milk produced and in turn a monthly, weekly and yearly 
 ## Known Bugs
 There are no known bugs.
 ## Technologies Used
-HTML CSS Javascript
+* HTML 
+* CSS 
+* Javascript
 ## Support and contact details
 Email : clare.limo@student.moringaschool.com
 ### License
