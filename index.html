@@ -33,8 +33,24 @@
             <button id="btn" onclick="totalProduction()">Submit</button>
         </form>
     </div>
-    <div>
-        <p style="padding: 30px;"><b>The total production is: <span id="result"></span></b></p>
+    
+    <div class="monthly">
+        <h1>Information</h1>
+        <p><b>The total production is: <span id="result"></span></b></p>
+        <p><b>Your weekly income will be: <span id="result"></span></b></p>
+        <p><b>Your monthly income will be: <span id="result"></span></b></p>
+        <p><b>Your Yearly income will be: <span id="result"></span></b></p>
+        <form>
+            <select id="month">
+                <option value="jan">January</option>
+                <option value="feb">February</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+            </select>
+            <label>Month: </label><input type="number" id="value1">
+            <button type="button" onclick="calc()">Calculate</button>
+        </form>
+        <div class="total"><b>The result is: <span id="result"></span></b></div>
     </div>
 </body>
 </html>
