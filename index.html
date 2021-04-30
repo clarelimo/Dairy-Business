@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dairy Business</title>
     <link rel="stylesheet" href="style.css">
-    <script src="dailyReports.js"></script>
+    <script src="./Javascript/dailyReports.js"></script>
     <script src="monthlyReports.js"></script>
     <script src="overTimeReports.js"></script>
 </head>
@@ -15,15 +15,26 @@
         <h1>Daily milk produced</h1>
         <form class="daily-form">
             <div class="form-control">
-                <label>Shade</label>
-                <input type="text" name="shadename" id="shadename" class="form-control" placeholder="Enter the shade name">
+                <label>Shade A</label>
+                <input type="number" name="litres" id="litres1" class="form-control" placeholder="Enter the number of litres">
             </div>
             <div class="form-control">
-                <label>Litres</label>
-                <input type="number" name="litres" id="litres" class="form-control" placeholder="Enter the number of litres">
+                <label>Shade B</label>
+                <input type="number" name="litres" id="litres2" class="form-control" placeholder="Enter the number of litres">
             </div>
-            <button onclick="dailyReports()">Submit</button>
+            <div class="form-control">
+                <label>Shade C</label>
+                <input type="number" name="litres" id="litres3" class="form-control" placeholder="Enter the number of litres">
+            </div>
+            <div class="form-control">
+                <label>Shade D</label>
+                <input type="number" name="litres" id="litres4" class="form-control" placeholder="Enter the number of litres">
+            </div>
+            <button id="btn" onclick="totalProduction()">Submit</button>
         </form>
+    </div>
+    <div>
+        <p style="padding: 30px;"><b>The total production is: <span id="result"></span></b></p>
     </div>
 </body>
 </html>

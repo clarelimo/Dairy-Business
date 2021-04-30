@@ -1,13 +1,10 @@
-var production = [{shade:"A",litres:510},{shade:"B",litres:308},{shade:"C",litres:486},{shade:"D",litres:572}];
+function totalProduction(){    
+    var shadeA= parseInt(document.querySelector("#litres1").value);
+    var shadeB = parseInt(document.querySelector("#litres2").value);
+    var shadeC= parseInt(document.querySelector("#litres3").value);
+    var shadeD = parseInt(document.querySelector("#litres4").value);
 
-var totalProduction= function(production){
-    let n = production.length;
-    let sum =0;
-    for(let i=0;i<n;i++){
-        console.log("Your Production in Shade "+production[i].shade + " is "+production[i].litres+" litres per day");
-        sum+=production[i].litres;
-    }
-    return "The total production is "+sum+" litres per day.";
-
+    var sum = shadeA + shadeB + shadeC + shadeD;
+    document.querySelector("#result").innerHTML = sum;
+    alert("The total production is "+sum+ " litres per day");
 }
-console.log(totalProduction(production));
