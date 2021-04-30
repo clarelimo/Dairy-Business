@@ -69,3 +69,17 @@ body{
 .monthly p,h1{
     padding: 30px 40px;
 }
+
+.monthly button{
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 4px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+}
+.monthly label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
