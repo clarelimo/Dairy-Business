@@ -1,32 +1,30 @@
-function totalProduction(){    
-    var shadeA= parseInt(document.querySelector("#litres1").value);
-    var shadeB = parseInt(document.querySelector("#litres2").value);
-    var shadeC= parseInt(document.querySelector("#litres3").value);
-    var shadeD = parseInt(document.querySelector("#litres4").value);
-
-    var sum = shadeA + shadeB + shadeC + shadeD;
-    document.querySelector("#result").innerHTML = sum;
-    // alert("The total production is "+sum+ " litres per day");
-}
 var row = 1;
-
 function displayDetails(){
-    var shade = document.getElementById("shade").value;
-    var litres = document.getElementById("litres").value;
-
-    if(!shade || !litres){
+    var shadeA= parseInt(document.getElementById("litres1").value);
+    var shadeB = parseInt(document.getElementById("litres2").value);
+    var shadeC= parseInt(document.getElementById("litres3").value);
+    var shadeD = parseInt(document.getElementById("litres4").value);
+    
+    if(!shadeA || !shadeB || !shadeC || !shadeD){
         alert("Please fill all the boxes");
         return;
     }
-
-    var display = document.getElementById("display");
-    var newRow = display.insertRow(row);
-    var cell1 = newRow.insertCell(0);
-    var cell2 = newRow.insertCell(1);
-
-    cell1.innerHTML = shade;
-    cell2.innerHTML = litres;
-    row++;
-    totalProduction();
+    
+    var production = [];
+    production.push({name:"Shade A",litres:shadeA},{name:"Shade B",litres:shadeB},{name:"Shade C",litres:shadeC},{name:"Shade D",litres:shadeD});
+    let n = production.length;
+    let sum =0;
+    for(let i=0;i<n;i++){
+        sum+=production[i].litres;
+        var display = document.getElementById("display");
+        var newRow = display.insertRow(row);
+        var cell1 = newRow.insertCell(0);
+        var cell2 = newRow.insertCell(1);
+    
+        cell1.innerHTML = production[i].name;
+        cell2.innerHTML = production[i].litres;
+        row++;
+    }
+    document.querySelector("#result").innerHTML = sum + " litres per day.";    
 }
 

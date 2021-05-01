@@ -12,22 +12,34 @@
 </head>
 <body>
     <div class="header">
-            <div id="date">
-                
-            </div>
-            <div class="container">
-                <form class="daily-form">
-                    <div class="form-control">
-                        <label>Shade</label>
-                        <input type="text" name="shade" id="shade" class="form-control" placeholder="Enter the shade name">
-                    </div>
-                    <div class="form-control">
-                        <label>Litres</label>
-                        <input type="number" name="litres" id="litres" class="form-control" placeholder="Enter the number of litres">
-                    </div>
-                    <button type="button" id="entry" onclick="displayDetails()">Input Entry</button>
-                </form>
-            </div>
+        <div id="date">
+            
+        </div>
+        <div class="container">
+            <form class="daily-form">
+
+                <div class="form-control">
+                    <label>Litres</label>
+                    <input type="number" name="litres" id="litres1" class="form-control" placeholder="Enter the number of litres">
+                </div>
+
+                <div class="form-control">
+                    <label>Litres</label>
+                    <input type="number" name="litres" id="litres2" class="form-control" placeholder="Enter the number of litres">
+                </div>
+
+                <div class="form-control">
+                    <label>Litres</label>
+                    <input type="number" name="litres" id="litres3" class="form-control" placeholder="Enter the number of litres">
+                </div>
+
+                <div class="form-control">
+                    <label>Litres</label>
+                    <input type="number" name="litres" id="litres4" class="form-control" placeholder="Enter the number of litres">
+                </div>
+                <button type="button" id="entry" onclick="displayDetails()">Input Entry</button>
+            </form>
+        </div>
     </div>
     <div class="monthly">
         <h1>Production</h1>
@@ -38,28 +50,6 @@
             </tr>
         </table>
         <div class="total"><b>The total production is: <span id="result"></span></b></div>
-    </div>
-    <div id="daily" class="daily">
-        <h1>Daily milk produced</h1>
-        <form class="daily-form">
-            <div class="form-control">
-                <label>Shade A</label>
-                <input type="number" name="litres" id="litres1" class="form-control" placeholder="Enter the number of litres">
-            </div>
-            <div class="form-control">
-                <label>Shade B</label>
-                <input type="number" name="litres" id="litres2" class="form-control" placeholder="Enter the number of litres">
-            </div>
-            <div class="form-control">
-                <label>Shade C</label>
-                <input type="number" name="litres" id="litres3" class="form-control" placeholder="Enter the number of litres">
-            </div>
-            <div class="form-control">
-                <label>Shade D</label>
-                <input type="number" name="litres" id="litres4" class="form-control" placeholder="Enter the number of litres">
-            </div>
-            <button id="btn" onclick="totalProduction()">Submit</button>
-        </form>
     </div>
 </body>
 </html>
