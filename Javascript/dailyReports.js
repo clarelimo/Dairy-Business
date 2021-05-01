@@ -6,5 +6,7 @@ function totalProduction(){
 
     var sum = shadeA + shadeB + shadeC + shadeD;
     document.querySelector("#result").innerHTML = sum;
-    alert("The total production is "+sum+ " litres per day");
+    // alert("The total production is "+sum+ " litres per day");
 }
+
+
