@@ -26,49 +26,11 @@ body{
     background-size: cover;
     height: 200px;
 }
-
-.details label{
-    display: inline-block;
-    margin-bottom: 5px;
-}
-.details input{
-    border: 2px solid #f0f0f0;
-    border-radius: 4px;
-    font-family: inherit;
-    font-size: 14px;
-    padding: 10px;
-    width: 25%;
-}
-
-.details{
-    padding: 30px 40px;
-}
-.details button{
-    background-color: blue;
-    border: 2px solid blue;
-    border-radius: 4px;
-    display: block;
-    color: #fff;
-    font-family: inherit;
-    font-size: 16px;
-    padding: 10px;
-    width: 100%;
-}
-
-.daily{
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    overflow: hidden;
-    width: 400px;
-    max-width: 100%;
-}
 .daily-form{
     padding: 30px 40px;
 }
-.daily h1{
-    margin: 0;
-    padding: 20px;
+.production h1{
+    padding: 40px;
 }
 .form-control{
     margin-bottom: 10px;
@@ -90,18 +52,7 @@ body{
     width: 100%;
 
 }
-.daily button{
-    background-color: blue;
-    border: 2px solid blue;
-    border-radius: 4px;
-    display: block;
-    color: #fff;
-    font-family: inherit;
-    font-size: 16px;
-    padding: 10px;
-    width: 100%;
-}
-.monthly{
+.production{
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
@@ -110,37 +61,8 @@ body{
     width: 400px;
     max-width: 100%;
 }
-.monthly p,h1{
-    padding: 30px 40px;
-}
-
-.monthly button{
-    background-color: blue;
-    border: 2px solid blue;
-    border-radius: 4px;
-    color: #fff;
-    font-family: inherit;
-    font-size: 14px;
-    padding: 10px;
-}
-.monthly label{
-    display: inline-block;
-    margin-bottom: 5px;
-}
-.monthly input{
-    border: 2px solid #f0f0f0;
-    border-radius: 4px;
-    font-family: inherit;
-    font-size: 14px;
-    padding: 10px;
-    width: 25%;
-}
 .total{
     padding: 10px 40px;
-}
-#month{
-    margin-left: 40px;
-    padding: 5px;
 }
 .container{
     background-color: white;
