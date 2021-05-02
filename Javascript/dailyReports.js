@@ -1,4 +1,18 @@
 
+var leapYear = [{month:"January", days:31},
+{month:"February", days:29},
+{month:"March", days:31},
+{month:"April", days:30},
+{month:"May", days:31},
+{month:"June", days:30},
+{month:"July", days:31},
+{month:"August", days:31},
+{month:"September", days:30},
+{month:"October", days:31},
+{month:"November", days:30},
+{month:"December", days:31}];
+
+let n = leapYear.length;
 function displayDetails(){
     let total = totalProduction();
     let price = 45;
@@ -6,6 +20,15 @@ function displayDetails(){
     document.querySelector("#weekly").innerHTML = "Ksh."+ overTime(price,total,"weekly");  
     document.querySelector("#monthly").innerHTML = "Ksh."+ overTime(price,total,"monthly");  
     document.querySelector("#yearly").innerHTML = "Ksh."+ overTime(price,total,"yearly");  
+
+    var months= [];
+    months = monthlyReport(price,total);
+    let len = months.length;
+    for(let i = 0; i<len;i++){
+       let month = leapYear[i].month;
+       let sales = months[i].sales;
+       document.querySelector("#"+month).innerHTML = "Your income for " + month + " is : " +sales;  
+    } 
 }
 
 var row = 1;
@@ -22,9 +45,9 @@ function totalProduction(){
     
     var production = [];
     production.push({name:"Shade A",litres:shadeA},{name:"Shade B",litres:shadeB},{name:"Shade C",litres:shadeC},{name:"Shade D",litres:shadeD});
-    let n = production.length;
+    let length = production.length;
     let sum =0;
-    for(let i=0;i<n;i++){
+    for(let i=0;i<length;i++){
         sum+=production[i].litres;
         var display = document.getElementById("display");
         var newRow = display.insertRow(row);
@@ -52,10 +75,11 @@ function overTime(price, total, time){
     return projection;
 }
 
-// function displayOverTime(){
-//     var rate = parseInt(document.getElementById("rate").value);
-//     var time = document.querySelector("#time").value;
-//     var total = overTime(rate, time);
-
-//     document.querySelector("#weekly").innerHTML = "Ksh."+ total + " weekly.";  
-// }
+function monthlyReport(price,totalProduction){
+    let result =[];
+    for(let i = 0; i<n;i++){
+        let amount = leapYear[i].days * price * totalProduction;
+        result.push({month:leapYear[i].name,sales:amount});   
+    }
+   return result;
+}
