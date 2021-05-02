@@ -11,130 +11,120 @@
     <script src="./Javascript/overTimeReports.js"></script>
 </head>
 <body>
-    <div class="header">
-        <div id="date">
-            
-        </div>
-        <div class="container">
-            <form class="daily-form">
-                <div class="form-control">
-                    <label>Shade A</label>
-                    <input type="number" name="litres" id="litres1" class="form-control" placeholder="Enter the number of litres">
-                </div>
-
-                <div class="form-control">
-                    <label>Shade B</label>
-                    <input type="number" name="litres" id="litres2" class="form-control" placeholder="Enter the number of litres">
-                </div>
-
-                <div class="form-control">
-                    <label>Shade C</label>
-                    <input type="number" name="litres" id="litres3" class="form-control" placeholder="Enter the number of litres">
-                </div>
-
-                <div class="form-control">
-                    <label>Shade D</label>
-                    <input type="number" name="litres" id="litres4" class="form-control" placeholder="Enter the number of litres">
-                </div>
-                <button type="button" id="entry" onclick="displayDetails()">Submit</button>
-            </form>
-        </div>
-    </div>
-    <div class="production">
-        <div id="date">
-            
-        </div>
-        <h1>Production</h1>
-        <table id="display">
-            <tr>
-                <th>Shade</th>
-                <th>Litres</th>
-            </tr>
-        </table>
-        <div class="total"><b>The total production is: <span id="result"></span></b></div>
-    </div>
-    
-    <div class="projections">
-        <div id="date">
-            
-        </div>
-        <div class="overtime">
-            <h1>Projections</h1>
-            <div class="projection">
-                 <div class="form-control">
-                    <p><b>Your weekly income will be: <span id="weekly"></span></b></p>
-                 </div>
-                <div class="form-control">
-                    <p><b>Your monthly income will be: <span id="monthly"></span></b></p>
-                </div>
-                <div class="form-control">
-                    <p><b>Your Yearly income will be: <span id="yearly"></span></b></p>
-                </div>
+    <nav>
+        <h1>The Dairy Business Report</h1>
+    </nav>
+    <main>
+        <div class="header">
+            <div id="date">
                 
             </div>
+            <div class="container">
+                <form class="daily-form">
+                    <div class="form-control">
+                        <label>Shade A</label>
+                        <input type="number" name="litres" id="litres1" class="form-control" placeholder="Enter the number of litres">
+                    </div>
+    
+                    <div class="form-control">
+                        <label>Shade B</label>
+                        <input type="number" name="litres" id="litres2" class="form-control" placeholder="Enter the number of litres">
+                    </div>
+    
+                    <div class="form-control">
+                        <label>Shade C</label>
+                        <input type="number" name="litres" id="litres3" class="form-control" placeholder="Enter the number of litres">
+                    </div>
+    
+                    <div class="form-control">
+                        <label>Shade D</label>
+                        <input type="number" name="litres" id="litres4" class="form-control" placeholder="Enter the number of litres">
+                    </div>
+                    <button type="button" id="entry" onclick="displayDetails()">Submit</button>
+                </form>
+            </div>
         </div>
-    </div>
-    <div class="leapyear">
-        <div id="date">
-            
+        <div class="production">
+            <div id="date">
+                
+            </div>
+            <h1>Production</h1>
+            <table id="display">
+                <tr>
+                    <th>Shade</th>
+                    <th>Litres</th>
+                </tr>
+            </table>
+            <div class="total"><b>The total production is: <span id="result"></span></b></div>
         </div>
-        <div class="overtime">
-            <h1>Monthly Income</h1>
-            <div class="projection">
-                 <div class="form-control">
-                    <p><b><span id="January"></span></b></p>
-                 </div>
-                <div class="form-control">
-                    <p><b><span id="February"></span></b></p>
-                </div>
-                <div class="form-control">
-                    <p><b><span id="March"></span></b></p>
-                </div>
-                <div class="form-control">
-                    <p><b><span id="April"></span></b></p>
-                 </div>
-                <div class="form-control">
-                    <p><b><span id="May"></span></b></p>
-                </div>
-                <div class="form-control">
-                    <p><b><span id="June"></span></b></p>
-                </div>
-                <div class="form-control">
-                    <p><b><span id="July"></span></b></p>
-                 </div>
-                <div class="form-control">
-                    <p><b><span id="August"></span></b></p>
-                </div>
-                <div class="form-control">
-                    <p><b><span id="September"></span></b></p>
-                </div>
-                <div class="form-control">
-                    <p><b><span id="October"></span></b></p>
-                 </div>
-                <div class="form-control">
-                    <p><b><span id="November"></span></b></p>
-                </div>
-                <div class="form-control">
-                    <p><b><span id="December"></span></b></p>
+        
+        <div class="projections">
+            <div id="date">
+                
+            </div>
+            <div class="overtime">
+                <h1>Projections</h1>
+                <div class="projection">
+                     <div class="form-control">
+                        <p><b>Your weekly income will be: <span id="weekly"></span></b></p>
+                     </div>
+                    <div class="form-control">
+                        <p><b>Your monthly income will be: <span id="monthly"></span></b></p>
+                    </div>
+                    <div class="form-control">
+                        <p><b>Your Yearly income will be: <span id="yearly"></span></b></p>
+                    </div>
+                    
                 </div>
             </div>
-
-    </div>
-    <!-- <div class="comparison">
-        <div class="form-control">
-            <form>
-                <label>Rate:</label>
-                <input type="number" id="rate" class="form-control" placeholder="Enter the selling price">
-                <label>Time:</label>
-                <select id="time">
-                    <option value="w">weekly</option>
-                    <option value="m">Monthly</option>
-                    <option value="y">Yearly</option>
-                </select>
-                 
-                <button type="button" onclick="displayOverTime()">Calculate</button>
-            </form>
         </div>
-    </div> -->
+        <div class="leapyear">
+            <div id="date">
+                
+            </div>
+            <div class="overtime">
+                <h1>Monthly Income</h1>
+                <div class="projection">
+                     <div class="form-control">
+                        <p><b><span id="January"></span></b></p>
+                     </div>
+                    <div class="form-control">
+                        <p><b><span id="February"></span></b></p>
+                    </div>
+                    <div class="form-control">
+                        <p><b><span id="March"></span></b></p>
+                    </div>
+                    <div class="form-control">
+                        <p><b><span id="April"></span></b></p>
+                     </div>
+                    <div class="form-control">
+                        <p><b><span id="May"></span></b></p>
+                    </div>
+                    <div class="form-control">
+                        <p><b><span id="June"></span></b></p>
+                    </div>
+                    <div class="form-control">
+                        <p><b><span id="July"></span></b></p>
+                     </div>
+                    <div class="form-control">
+                        <p><b><span id="August"></span></b></p>
+                    </div>
+                    <div class="form-control">
+                        <p><b><span id="September"></span></b></p>
+                    </div>
+                    <div class="form-control">
+                        <p><b><span id="October"></span></b></p>
+                     </div>
+                    <div class="form-control">
+                        <p><b><span id="November"></span></b></p>
+                    </div>
+                    <div class="form-control">
+                        <p><b><span id="December"></span></b></p>
+                    </div>
+                </div>
+    
+        </div>
+
+    </main>
 </body>
 </html>

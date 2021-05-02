@@ -4,11 +4,19 @@
 body{
     background-color: gray;
     font-family: 'Open Sans',sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     min-height: 100vh;
     margin: 0;
+}
+main{
+    display: flex; 
+     align-items: center;
+    justify-content: center;
+}
+nav{
+    text-align: center;
+    padding: 10px 40px;
+    font-size: 35px;
+    color: white;
 }
 .header{
     background-color: white;
