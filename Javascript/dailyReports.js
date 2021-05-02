@@ -1,5 +1,15 @@
-var row = 1;
+
 function displayDetails(){
+    let total = totalProduction();
+    let price = 45;
+    document.querySelector("#result").innerHTML =  total + " litres per day.";  
+    document.querySelector("#weekly").innerHTML = "Ksh."+ overTime(price,total,"weekly");  
+    document.querySelector("#monthly").innerHTML = "Ksh."+ overTime(price,total,"monthly");  
+    document.querySelector("#yearly").innerHTML = "Ksh."+ overTime(price,total,"yearly");  
+}
+
+var row = 1;
+function totalProduction(){
     var shadeA= parseInt(document.getElementById("litres1").value);
     var shadeB = parseInt(document.getElementById("litres2").value);
     var shadeC= parseInt(document.getElementById("litres3").value);
@@ -25,6 +35,27 @@ function displayDetails(){
         cell2.innerHTML = production[i].litres;
         row++;
     }
-    document.querySelector("#result").innerHTML = sum + " litres per day.";    
+    return sum;
+}
+  
+
+function overTime(price, total, time){
+    let projection = 0;
+    if(time === "weekly"){
+        projection = total * price * 7;
+       
+    }else if(time === "yearly"){
+        projection = total * price * 365;
+    }else{
+        projection = total * price * 30;
+    }
+    return projection;
 }
 
+// function displayOverTime(){
+//     var rate = parseInt(document.getElementById("rate").value);
+//     var time = document.querySelector("#time").value;
+//     var total = overTime(rate, time);
+
+//     document.querySelector("#weekly").innerHTML = "Ksh."+ total + " weekly.";  
+// }
