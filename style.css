@@ -30,7 +30,7 @@ body{
     padding: 30px 40px;
 }
 .production h1{
-    padding: 40px;
+    padding: 10px 40px;
     color: blue;
 }
 .form-control{
@@ -64,7 +64,7 @@ body{
     max-width: 100%;
 }
 .total{
-    padding: 10px 40px;
+    padding: 50px 40px;
 }
 .container{
     background-color: white;
